@@ -1,0 +1,45 @@
+
+.General{
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 25vh);
+    overflow: auto;
+	gap: 20px;
+	.card_table{
+		display: flex;
+		flex-direction: column;
+		height: calc(100vh - 25vh);
+		gap: 25px;
+		padding: 20px;
+		.header{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		
+			.title{
+				font-size: 16px;
+				color: #262d3f;
+				font-weight: 600;
+			}
+		}
+		.cont_intern{
+			display: flex;
+			flex-direction: column;
+			gap: 26px;
+
+			.cont_inputs{
+				display: flex;
+				align-items: flex-end;
+				gap: 20px;
+				
+				.w372{
+					width: 372px;
+				}
+				.w248{
+					width: 248px;
+				}
+			}
+		}
+	}
+}

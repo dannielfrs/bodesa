@@ -1,0 +1,17 @@
+/**
+ * Tablet screen
+ */
+@mixin tablet-screen() {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+/**
+ * Phone screen
+ */
+@mixin phone-screen() {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}

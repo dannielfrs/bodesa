@@ -1,0 +1,149 @@
+.Background{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    .ShowPermissions{
+        width: 1235px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background: #ffffff;
+        padding: 0 24px;
+
+        .header{
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            align-items: center;
+            border-bottom: 1px solid #d5d8e0;
+            justify-content: space-between;
+
+            .title{
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+
+        .containers{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .cont1{
+                border-radius: 10px;
+                border: 1px solid #dee0e3;
+                width: 330px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                height: 88vh;
+
+                .titleM{
+                    font-size: 16px;
+                    color: #262d3f;
+                    font-weight: 700;
+                }
+
+                .Options{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+
+            .cont2{
+                width: 835px;
+                border-radius: 10px;
+                border: 1px solid #dee0e3;
+                padding: 20px;
+
+                .headerTable{
+                    font-size: 16px;
+                    color: #262d3f;
+                    font-weight: 700;
+                }
+
+                .TablePanelOptions{
+                    table-layout: fixed;
+                    border-collapse: collapse;
+                    border-radius: 10px;
+                    width: 100%;
+                    margin-top: 9px;
+                    thead{
+                        border-bottom: 1px solid #dee0e3 !important;
+                        >tr {
+                            display: flex;
+                            text-align: inherit;
+                            align-items: center;
+                            width: max-content;
+                            height: 45px;
+                        }
+                        >tr>th {
+                            width: 75px;
+                            height: 30px;
+                            max-height: 30px;
+                            text-align: start;
+                            background: #ffffff !important;
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: #262d3f;
+                            
+                            &:nth-child(1){
+                                width: 250px;
+                                // padding: 15px 0;
+                            }
+                        }
+                    }
+                    tbody{
+                        border-bottom: 1px solid #dee0e3 !important;
+                        .trTd{
+                            width: max-content;
+                            >tr{
+                                display: flex;
+                                text-align: inherit;
+                                align-items: center;
+                                width: max-content;
+                                height: 45px;
+                                .tdBackground{
+                                    background: #f2f4f7;
+                                    width: 41vw !important;
+                                    p{
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                            >tr>td {
+                                display: flex;
+                                align-items: center;
+                                width: 75px;
+                                height: 45px;
+                                max-height: 45px;
+                                text-align: inherit;
+                                border-bottom: 1px solid #dee0e3 !important;
+                                font-size: 14px;
+                                color: #262d3f;
+                                text-decoration: none solid rgb(38, 45, 63);
+                                
+                                &:nth-child(1){
+                                    width: 188px;
+                                    padding-left: 10px;
+                                }
+                            }
+
+                            .color{
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.CreateEstablishments{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .container{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        height: 77vh;
+
+        .ContPhoto{
+            .text{
+                font-size: 14px;
+                color: #262d3f;
+                font-weight: 500;
+                margin-bottom: 6px;
+            }
+        }
+    }
+}

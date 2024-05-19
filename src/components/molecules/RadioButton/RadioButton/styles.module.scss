@@ -1,0 +1,76 @@
+/**
+ * Styles for base component
+ */
+.radiobutton {
+  display: flex;
+  align-items: center;
+  [class~="p-radiobutton"]{
+    width: 25px;
+    height: 25px;
+  }
+  [class~="p-radiobutton-box"] {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #f2f4f7;
+
+    &:hover {
+      border-color: #c5d4cb !important;
+    }
+  }
+
+  [class~="p-radiobutton-box"][class~="p-highlight"] {
+    width: 25px;
+    height: 25px;
+    border-radius: 50% !important;
+    background: #405563 !important;
+    border: 1px solid #405563;
+
+    &:hover {
+      background: #405563 !important;
+      border: 1px solid #405563 !important;
+    }
+
+    [class~="p-radiobutton-icon"] {
+      width: 12px;
+      height: 9px;
+      background-color: #00623a;
+      background-image: url('/images/icons/check.svg');
+    }
+  }
+
+  [class~="p-radiobutton-box"][class~="p-highlight"][class~="p-focus"] {
+    box-shadow: none;
+    border-color: #405563;
+  }
+}
+
+/**
+ * Styles for read only input
+ */
+
+
+
+/**
+ * Styles for disabled input
+ */
+
+
+
+/**
+ * Styles for invalid input
+ */
+.invalid {
+  border: 1px solid #cf1515 !important;
+  border-radius: 10px;
+
+  &:hover {
+    border: 1px solid #cf1515 !important;
+    border-radius: 10px;
+  }
+
+  &:focus {
+    border: 1px solid #cf1515 !important;
+    border-radius: 10px;
+  }
+}

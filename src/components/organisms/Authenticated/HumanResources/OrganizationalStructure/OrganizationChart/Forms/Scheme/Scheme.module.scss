@@ -1,0 +1,51 @@
+.card_scheme{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    gap: 25px;
+    padding: 20px;
+    position: relative;
+}
+.iconPdf{
+    position: absolute;
+    top: 4%;
+    left: 56%;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+.flex_colum{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    .cardChart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+        .nodeImage{
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+        }
+        .fontBold{
+            width: 100%;
+            word-wrap: break-word;
+            font-size: 14px;
+            font-weight: bold;
+            color: #262d3f;
+            text-align: center;
+        }
+        .dataTitle{
+            width: 100%;
+            word-wrap: break-word;
+            font-size: 14px;
+            font-weight: 400 !important;
+            color: #262d3f;
+            text-align: center;
+        }
+    }
+}

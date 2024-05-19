@@ -1,0 +1,87 @@
+@import '@/styles/media.scss';
+
+.form {
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  .form_header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    color: #262d3f;
+    border-bottom: 1px solid #dee0e3;
+
+    .form_header_buttons {
+      display: flex;
+      gap: 10px;
+
+      >div {
+        width: 80px;
+      }
+    }
+  }
+
+  .form_body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .form_row {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+
+      >div:first-child {
+        padding-left: 0;
+      }
+
+      >div:last-child {
+        padding-right: 0;
+      }
+
+      .form_column {
+        width: 50%;
+        padding: 0 10px;
+      }
+
+      .form_column_2 {
+        width: 100%;
+        padding: 0 10px;
+      }
+
+      .form_column_3 {
+        width: 100%;
+        padding: 0 10px;
+      }
+
+      .form_col {
+        width: calc(100% / 3);
+        padding: 0 10px;
+      }
+    }
+
+    .form_checkbox {
+      width: 130px;
+      padding: 0 10px;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+/* Styles for tablet screen */
+
+@include tablet-screen() {
+  .form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+.section_table_status{
+    display: flex;
+    justify-content: center;
+    .status_active{
+        width: 70px;
+        height: 35px;
+        background-color: #e6fcf4;
+        color: #41ac6f;
+        border: 1px solid #9fe0bc;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .statusInactive{
+        width: 80px;
+        height: 35px;
+        background-color: #f5e9c4;
+        color: #9e872b;
+        border: 1px solid #cfc28f;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,357 @@
+/**
+ * Styles for base component
+ */
+.button[class~="p-button"] {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 15px;
+    border: none;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    [class~="p-button-icon"] {
+        width: 15px;
+        height: 13px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    [class~="p-button-label"] {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+/**
+ * Styles for color variant
+ * 
+ * Primary color
+ * 
+ */
+.primary[class~="p-button"] {
+    background: #4c5d69;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    border: unset;
+    cursor: pointer;
+
+    &:hover {
+        background: #405563 !important;
+        color: #ffffff !important;
+        border: unset;
+    }
+
+    &:active {
+        background-color: #4c5d69 !important;
+    }
+
+    [class~="p-button-label"] {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+/**
+ * Secondary color
+ */
+.secondary[class~="p-button"] {
+    border: 1px solid #405563;
+    background-color: #ffffff;
+    background-size: cover;
+    font-size: 14px;
+    color: #405563;
+    text-align: center;
+
+    &:hover {
+        border: 1px solid #384c5c !important;
+        background: #f7f7f7 !important;
+        color: #405563 !important;
+    }
+
+    &:active {
+        border: 1px solid #384c5c;
+        background: #f7f7f7;
+        color: #405563;
+    }
+
+    [class~="p-button-label"] {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+/**
+ * White color
+ */
+.white[class~="p-button"] {
+    background: #ffffff;
+    font-size: 14px;
+    color: #262d3f;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: #f2f4f7;
+        color: #262d3f;
+        border: none;
+    }
+
+    &:active {
+        background: #f2f4f7;
+        color: #262d3f;
+        border: none;
+    }
+
+    [class~="p-button-label"] {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+/**
+ * tabBtn color
+ */
+.tabBtn[class~="p-button"] {
+    background-color: #ffffff;
+    background-size: cover;
+    font-size: 14px;
+    color: #7e8a91;
+    text-align: center;
+
+    &:hover {
+        background-color: #f2f4f7;
+        color: #262d3f;
+        text-align: center;
+    }
+
+    &:active {
+        background-color: #f2f4f7;
+        color: #262d3f;
+    }
+
+    [class~="p-button-label"] {
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+/**
+ * Delete color
+ */
+.button_delete[class~="p-button"] {
+    width: 30px;
+    height: 30px;
+    background-color: #d1786b;
+    padding: 0 !important;
+
+    &:hover {
+        background: #cf4b27;
+    }
+
+    &:active {
+        background: #cf4b27;
+    }
+}
+
+/**
+ * Delete rounded color
+ */
+.delete_rounded[class~="p-button"] {
+    width: 15px;
+    height: 15px;
+    background-color: #d1786b;
+    padding: 0 !important;
+    border-radius: 50%;
+
+    &:hover {
+        background: #cf4b27;
+    }
+
+    &:active {
+        background: #cf4b27;
+    }
+
+    [class~="p-button-icon"] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+    }
+}
+
+/**
+ * Show color
+ */
+.button_show[class~="p-button"] {
+    width: 30px;
+    height: 30px;
+    background-color: #dbdbd9;
+    padding: 0;
+
+    &:hover {
+        background: #cccccc;
+    }
+
+    &:active {
+        background: #cccccc;
+    }
+}
+
+/**
+ * Edit color
+ */
+.button_edit[class~="p-button"] {
+    width: 30px;
+    height: 30px;
+    background: #7a8891;
+    padding: 0;
+
+    &:hover {
+        background: #405563;
+    }
+
+    &:active {
+        background: #405563;
+    }
+}
+
+/**
+ * disabled color
+ */
+.button_disabled[class~="p-button"] {
+    background-color: #f2f2f2;
+    font-size: 16px;
+    color: #d6d6d6;
+    text-decoration: none solid rgb(214, 214, 214);
+    text-align: center;
+    border: unset;
+
+    [class~="p-button-label"] {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    &:hover {
+        background: #f2f2f2;
+    }
+}
+
+/**
+ * Transparent color
+ */
+.transparent[class~="p-button"] {
+    background-color: transparent;
+    padding: 0;
+
+    &:hover {
+        filter: invert(74%) sepia(26%) saturate(1786%) hue-rotate(154deg) brightness(110%) contrast(96%);
+        background-color: transparent;
+    }
+
+    &:active {
+        filter: invert(74%) sepia(26%) saturate(1786%) hue-rotate(154deg) brightness(110%) contrast(96%);
+        background-color: transparent;
+    }
+
+    [class~="p-button-icon"] {
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    [class~="p-button-label"] {
+        font-size: 16px;
+    }
+}
+
+/**
+ * Transparent-gray color
+ */
+.transparent-gray[class~="p-button"] {
+    background-color: transparent;
+    padding: 0;
+
+    &:hover {
+        background-color: #f2f5f7;
+    }
+
+    &:active {
+        background-color: #f2f5f7;
+    }
+
+    [class~="p-button-icon"] {
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    [class~="p-button-label"] {
+        font-size: 14px;
+        color: #7e8a91;
+    }
+}
+
+/**
+ * Transparent-static color
+ */
+.transparent-static[class~="p-button"] {
+    background-color: transparent;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &:active {
+        background-color: transparent;
+    }
+
+    [class~="p-button-icon"] {
+        width: 30px;
+        height: 28px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    [class~="p-button-label"] {
+        font-size: 16px;
+    }
+}
+
+/**
+ * Gray-bordered color
+ */
+.gray-bordered[class~="p-button"] {
+    background-color: #f2f4f7;
+    border: 1px solid #d5d8e0;
+    padding: 0;
+
+    &:hover {
+        background-color: #f2f4f7;
+        border: 1px solid #d5d8e0;
+    }
+
+    &:active {
+        background-color: #f2f4f7;
+        border: 1px solid #d5d8e0;
+    }
+
+    [class~="p-button-icon"] {
+        width: 18px;
+        height: 18px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}

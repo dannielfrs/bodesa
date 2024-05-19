@@ -1,0 +1,47 @@
+
+.employeeList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card_header{
+    height: 85px;
+    padding: 20px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .partLeft{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    .tabsBtns{
+        display: flex;
+        gap: 10px;
+    }
+    .title{
+        font-size: 16px;
+        color: #262d3f;
+        font-weight: 700;
+    }
+
+    .partRight{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        
+        .InputSearch{
+            width: 250px;
+        }
+        .ButtonNew{
+            width: 80px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.imageannotation {
+  width: 100%;
+  height: 'auto';
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #c8c8e0;
+  object-fit: contain;
+}
+
+.imageannotation_editor {
+  background-color: transparent;
+  border-radius: 3px;
+  position: absolute;
+}
+
+.imageannotation_highlight {
+  position: absolute;
+  border: 1px solid #3e5261;
+  background-color: rgba(0, 0, 0, 0.15);
+
+  .imageannotation_highlight_label {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: -20px;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #33b0cc;
+    font-size: 10px;
+    color: #ffffff;
+  }
+
+  .imageannotation_highlight_button {
+    position: absolute;
+    right: -8px;
+    top: -13px;
+    z-index: 3;
+  }
+}

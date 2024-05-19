@@ -1,0 +1,39 @@
+{
+  "name": "bodesa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3008",
+    "lint": "next lint",
+    "prod": "next build && next export"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "chart.js": "^4.4.0",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.3.1",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "js-cookie": "^3.0.5",
+    "next": "13.4.19",
+    "primeicons": "^6.0.1",
+    "primereact": "^9.6.2",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-hook-form": "^7.46.1",
+    "react-image-annotation": "^0.9.10",
+    "sweetalert2": "^11.7.27"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "sass": "^1.60.1",
+    "standard": "^17.1.0"
+  }
+}

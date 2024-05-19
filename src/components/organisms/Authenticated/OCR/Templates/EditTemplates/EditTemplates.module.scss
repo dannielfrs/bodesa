@@ -1,0 +1,11 @@
+.CreateTemplates{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .titleV{
+        font-size: 16px;
+        color: #262d3f;
+        font-weight: 700;
+    }
+}

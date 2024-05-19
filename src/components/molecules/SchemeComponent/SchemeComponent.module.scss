@@ -1,0 +1,60 @@
+.organizationChart{
+    [class~="p-organizationchart-node-content"]{
+        width: 170px;
+        height: auto;
+        min-height: 170px;
+        border-radius: 10px;
+        background: #ffffff !important;
+        border: 1px solid #bcc7d6;
+        padding: 13px 5px !important;
+
+        >div:first-child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        [class~="p-organizationchart-selectable-node"]{
+            [class~="p-highlight"]{
+                font-weight: 400 !important;
+            }
+        }
+        [class~="p-node-toggler"]{
+            background: #ffffff;
+            box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+            &:focus{
+                box-shadow: unset;
+            }
+            i{
+                color: #000000 !important;
+            }
+        }
+        
+        &:hover{
+            background: #f2f4f7 !important;
+        }
+    }
+    [class~="p-organizationchart-table"]{
+        [class~="p-organizationchart-lines"] {
+            [class~="p-organizationchart-line-right"],
+            [class~="p-organizationchart-line-left"],
+            [class~="p-organizationchart-line-top"] {
+              border-top: 1px solid #bcc7d6 !important;
+              border-color: #bcc7d6 !important;
+            }
+        }
+        [class~="p-organizationchart-nodes"]{
+            >td{
+                padding: unset;
+
+                [class~="p-organizationchart-node-content"] {
+                    width: 150px !important; 
+                    // [class~="p-highlight"]{
+                    //     font-weight: 400 !important;
+                    // }
+                }
+            }
+        }
+    }
+}

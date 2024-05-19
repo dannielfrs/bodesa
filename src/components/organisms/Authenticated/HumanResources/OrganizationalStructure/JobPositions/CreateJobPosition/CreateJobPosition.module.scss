@@ -1,0 +1,122 @@
+
+.CreateClient{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	.header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px;
+		.title{
+				font-size: 16px;
+				font-weight: bold;
+				color: #262d3f;
+				text-decoration: none solid rgb(38, 45, 63);
+		}
+		.Buttons{
+				display: flex;
+				flex-direction: row;
+				gap: 19px;
+		}
+	}
+	.rows{
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+	}
+	.container_function{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.container_input{
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		gap: 20px;
+		.pTitle{
+			font-weight: bold;
+			font-size: 16px;
+			color: #262d3f;
+			text-decoration: none solid rgb(38, 45, 63);
+		}
+		.inputs{
+			display: flex;
+			flex-direction: column;
+			gap: 23px;
+			.row{
+				display: flex;
+				gap: 20px;
+				.w248{
+						width: 248px;
+				}
+				.w372{
+					width: 372px;
+				}
+				.w326{
+					width: 326px;
+				}
+				.w195{
+					width: 195px;
+				}
+			}
+		}
+		.checkBox{
+			margin-top: 30px;
+			margin-bottom: 17px;
+		}
+	}
+}
+.tableFunction{
+	display: flex;
+	flex-direction: column;
+
+	.title_table{
+		font-weight: 600;
+		font-size: 16px;
+		color: #262d3f;
+	}
+}
+.section_table_actions{
+    .cont-btn{
+        display: flex;
+        gap: 10px;
+
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.section_table_status{
+    display: flex;
+    justify-content: center;
+    .status_active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 35px;
+        background: #f0faf6;
+        font-weight: 600;
+        color: #439968;
+        border: 1px solid #a9ccb9;
+        border-radius: 5px;
+    }
+
+    .status_inactive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 35px;
+        background: #faf8f2;
+        font-weight: 600;
+        color: #9e872b;
+        border: 1px solid #cfc28f;
+        border-radius: 5px;
+    }
+}

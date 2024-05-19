@@ -1,0 +1,23 @@
+.Establishments {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .table_avatar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 17px;
+
+        img {
+            border-radius: 3px;
+            object-fit: contain;
+        }
+
+        p {
+            font-size: 14px;
+            color: #262d3f;
+            text-decoration: none solid rgb(38, 45, 63);
+        }
+    }
+}

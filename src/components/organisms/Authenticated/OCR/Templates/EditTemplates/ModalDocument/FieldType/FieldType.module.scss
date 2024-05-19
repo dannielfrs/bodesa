@@ -1,0 +1,35 @@
+.row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0 20px;
+    margin-top: 14px;
+
+    .circle {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #33b0cc;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gray {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont_delete {
+        display: flex;
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

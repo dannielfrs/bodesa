@@ -1,0 +1,28 @@
+.chart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+
+  .chart_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    >div:nth-child(1) {
+      font-size: 16px;
+      font-weight: bold;
+      color: #262d3f;
+    }
+
+    >div:nth-child(2) {
+      width: 80px;
+    }
+  }
+
+  [class~="p-chart"] {
+    width: 590px;
+    height: 320px;
+  }
+}

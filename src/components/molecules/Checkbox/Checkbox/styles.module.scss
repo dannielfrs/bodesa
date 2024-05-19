@@ -1,0 +1,127 @@
+/**
+ * Styles for base component
+ */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    label {
+        font-size: 14px;
+        font-weight: 500;
+        color: #262d3f;
+    }
+
+    /**
+     * Styles for invalid input
+     */
+    .invalid[class~="p-checkbox"] {
+        border: 1px solid #cf1515;
+        border-radius: 5px;
+
+        [class~="p-checkbox-box"] {
+            border-color: #cf1515;
+        }
+
+        &:hover {
+            border: 1px solid #de6164;
+            border-radius: 5px;
+        }
+
+        &:focus {
+            border: 1px solid #de6164;
+            border-radius: 5px;
+        }
+    }
+}
+
+/**
+ * Styles for color variant
+ * 
+ * Primary color
+ * 
+ */
+.primary {
+    [class~="p-checkbox"] {
+        width: 25px !important;
+        height: 25px !important;
+
+        [class~="p-checkbox-box"] {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background-color: #f2f4f7;
+            border: 1px solid #dee0e3;
+        }
+
+        [class~="p-checkbox-box"][class~="p-highlight"] {
+            background-color: #405563;
+            border: 1px solid #405563;
+
+            &:hover {
+                border: 1px solid #405563;
+                background-color: #405563;
+            }
+
+            svg {
+                color: transparent;
+                background-image: url('/images/icons/check.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        [class~="p-checkbox-box"][class~="p-focus"] {
+            border: 1px solid #dee0e3;
+        }
+    }
+}
+
+/**
+ * Secondary color
+ */
+.secondary {
+    [class~="p-checkbox"] {
+        width: 25px !important;
+        height: 25px !important;
+
+        [class~="p-checkbox-box"] {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background-color: #f2f4f7;
+            border: 1px solid #dee0e3;
+        }
+
+        [class~="p-checkbox-box"][class~="p-highlight"] {
+            background-color: #405563;
+            border: 1px solid #405563;
+
+            &:hover {
+                border: 1px solid #405563;
+                background-color: #405563;
+            }
+
+            svg {
+                color: transparent;
+                background-image: url('/images/icons/check.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        [class~="p-checkbox-box"][class~="p-focus"] {
+            border: 1px solid #dee0e3;
+        }
+    }
+}
+
+/**
+ * Styles for read only input
+ */
+
+
+
+/**
+ * Styles for disabled input
+ */

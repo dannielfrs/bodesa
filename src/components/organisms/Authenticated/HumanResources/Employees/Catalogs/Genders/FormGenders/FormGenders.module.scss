@@ -1,0 +1,118 @@
+@import '@/styles/media.scss';
+
+.form_hook {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .section_header {
+    width: 100%;
+    height: 85px;
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: 1px solid #dee0e3;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    color: #262d3f;
+
+    .section_header_buttons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      >div:nth-child(1) {
+        margin-right: 20px;
+      }
+
+      .tab_button {
+        width: 100px;
+      }
+    }
+
+    .section_header_group {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      >div {
+        width: 100px;
+      }
+    }
+  }
+
+  .section_form {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #dee0e3;
+    background-color: #ffffff;
+
+    .section_row {
+      width: 100%;
+      display: flex;
+
+      >div:first-child {
+        padding-left: 0;
+      }
+
+      >div:last-child {
+        padding-right: 0;
+      }
+
+      .section_column {
+        width: 30%;
+        padding: 0 10px;
+      }
+
+      .section_column_2 {
+        width: 30%;
+        padding: 0 10px;
+      }
+
+      .section_column_3 {
+        width: 60%;
+        padding: 0 10px;
+      }
+
+      .section_col {
+        width: calc(100% / 6);
+        padding: 0 10px;
+      }
+
+      .section_col_2 {
+        width: calc((100% / 6) * 2);
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+.button_active {
+  background-color: #405563 !important;
+  cursor: default;
+
+  [class~="p-button-label"] {
+    color: #ffffff !important;
+  }
+}
+
+/* Styles for tablet screen */
+
+@include tablet-screen() {
+  .section {
+    width: 100%;
+  }
+}

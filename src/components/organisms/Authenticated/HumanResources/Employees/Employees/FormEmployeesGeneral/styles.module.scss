@@ -1,0 +1,111 @@
+@import '@/styles/media.scss';
+
+.form {
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .form_row {
+    width: 100%;
+    display: flex;
+
+    >div:first-child {
+      padding-left: 0;
+    }
+
+    >div:last-child {
+      padding-right: 0;
+    }
+
+    .form_column {
+      width: 20%;
+      max-width: 20%;
+      padding: 0 10px;
+    }
+
+    .form_column_2 {
+      width: 30%;
+      padding: 0 10px;
+    }
+
+    .form_column_3 {
+      width: 60%;
+      padding: 0 10px;
+    }
+
+    .form_col {
+      width: calc(100% / 6);
+      padding: 0 10px;
+    }
+
+    .form_col_2 {
+      width: calc((100% / 6) * 2);
+      padding: 0 10px;
+    }
+
+    .form_checkbox {
+      width: 130px;
+      padding: 0 10px;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.form_button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 35px;
+  padding-top: 60px;
+
+  >div {
+    width: 18%;
+  }
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 10px;
+  border: 1px solid #dee0e3;
+  padding: 25px 45px 20px 20px;
+  background-color: #ffffff;
+
+  .card_header {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #262d3f;
+  }
+
+  .card_body {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+    .card_logo {
+      width: 150px;
+    }
+
+    .card_content {
+      width: calc(100% - 150px);
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+}
+
+/* Styles for tablet screen */
+
+@include tablet-screen() {
+  .form {
+    width: 100%;
+  }
+}

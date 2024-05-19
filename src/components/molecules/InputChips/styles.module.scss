@@ -1,0 +1,116 @@
+/**
+ * Styles for base component
+ */
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+
+  .input_labels {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #262d3f;
+      margin-bottom: 0;
+    }
+
+    span {
+      font-size: 12px;
+      color: #a0a0a3;
+    }
+
+    .invalid_text {
+      color: #cf1515;
+    }
+  }
+}
+
+/**
+ * Styles for color variant
+ * 
+ * Primary color
+ */
+.primary {
+  [class~="p-chips"] {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    background-size: cover;
+    border: 1px solid #d5d8e0;
+    font-size: 14px;
+    color: #000000;
+    align-items: flex-start;
+
+    &:hover {
+      border: 1px solid #d5d8e0;
+    }
+
+    &:focus {
+      border: 1px solid #000000;
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      color: #a9a9a9;
+    }
+
+    [class~="p-chips-multiple-container"] {
+      width: 100%;
+      border: none;
+      box-shadow: none;
+      gap: 5px;
+
+      &[class~="p-focus"] {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+/**
+ * Styles for read only input
+ */
+.readonly[class~="p-chips"] {
+  background-color: #e6e6e6;
+  cursor: default;
+
+  &:focus {
+    border: 1px solid #d5d8e0;
+  }
+}
+
+/**
+ * Styles for disabled input
+ */
+.disabled[class~="p-chips"] {
+  background-color: #e6e6e6;
+  color: #b8b8b8;
+}
+
+/**
+ * Styles for invalid input
+ */
+.invalid[class~="p-chips"] {
+  border: 1px solid #cf1515 !important;
+
+  &:hover {
+    border: 1px solid #cf1515 !important;
+  }
+
+  &:focus {
+    border: 1px solid #cf1515 !important;
+  }
+
+}
+
+.invalid_message {
+  font-size: 11px;
+  color: #cf1515 !important;
+  margin-left: 5px;
+}

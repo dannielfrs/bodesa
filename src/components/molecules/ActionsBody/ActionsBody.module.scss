@@ -1,0 +1,12 @@
+.section_table_actions{
+    .cont-btn{
+        display: flex;
+        gap: 10px;
+
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

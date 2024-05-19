@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    .left{
+        display: flex;
+        align-items: center;
+        gap: 39px;
+        .title{
+                font-size: 16px;
+                font-weight: bold;
+                color: #262d3f;
+                text-decoration: none solid rgb(38, 45, 63);
+        }
+        .tabsBtns{
+            display: flex;
+            gap: 10px;
+        }
+    }
+    .Buttons{
+            display: flex;
+            flex-direction: row;
+            gap: 19px;
+    }
+}

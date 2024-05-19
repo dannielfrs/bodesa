@@ -1,0 +1,56 @@
+.Background{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    .ContCreate{
+        width: 675px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background: #ffffff;
+
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 60px;
+            align-items: center;
+            border-bottom: 1px solid #d5d8e0;
+            padding: 0 22px;
+
+            .title{
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            .bothButton{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+            }
+        }
+
+        .form{
+            padding: 22px 20px 16px;
+
+            .ContDate{
+                margin-top: 24px;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                align-items: center;
+            }
+
+            .ContFiles{
+                margin-top: 23px;
+
+            }
+        }
+    }
+}

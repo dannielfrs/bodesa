@@ -1,0 +1,211 @@
+@import '@/styles/media.scss';
+
+/**
+ * Variables for styles
+ */
+.sidebar_menu {
+  --link-hover-filter: invert(74%) sepia(26%) saturate(1786%) hue-rotate(154deg) brightness(110%) contrast(96%);
+  --link-active-bg: #405563;
+  --link-active-color: #ffffff;
+  --link-active-filter: brightness(200%);
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  z-index: 10;
+  transition: all 0.5s ease;
+  color: #7e8a91;
+  font-size: 14px;
+  font-weight: 500;
+  border-right: 1px solid #dee0e3;
+
+  .sidebar_button {
+    position: fixed;
+    left: 260px;
+    top: 0;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.5s ease;
+  }
+
+  .sidebar_header {
+    width: 100%;
+    position: relative;
+  }
+
+  .sidebar_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .sidebar_menuitem {
+      width: 100%;
+      height: 50px;
+      position: relative;
+      display: flex;
+      list-style: none;
+      transition: all 1s ease;
+
+      .sidebar_menuitem_link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        padding: 0 15px;
+        overflow: hidden;
+
+        img {
+          object-fit: contain;
+        }
+
+        span {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .menuitem_link_arrow {
+          margin-left: auto;
+        }
+
+        &:hover {
+          color: #384c5c;
+          background-color: #f2f4f7;
+
+          img {
+            filter: var(--link-hover-filter);
+          }
+        }
+      }
+
+      .sidebar_menuitem_link_active {
+        background-color: var(--link-active-bg);
+        color: var(--link-active-color);
+        font-weight: 600;
+        border-right: 2px solid #33b0cc;
+
+        &:hover {
+          background-color: var(--link-active-bg);
+          color: var(--link-active-color);
+        }
+
+        img {
+          filter: var(--link-active-filter) !important;
+        }
+      }
+    }
+
+    .sidebar_menuitem_active {
+      .sidebar_submenu {
+        display: block;
+      }
+    }
+  }
+
+  .sidebar_submenu {
+    width: 210px;
+    position: absolute;
+    left: 100%;
+    display: none;
+    background: #ffffff;
+    list-style: none;
+    transition: all 1.5s ease;
+    border-radius: 10px;
+    border: 1px solid #dee0e3;
+    overflow: hidden;
+    z-index: 10;
+
+    .sidebar_submenuitem {
+      width: 100%;
+      height: 50px;
+      position: relative;
+      display: flex;
+      list-style: none;
+      transition: all 1s ease;
+
+      .sidebar_submenuitem_link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        padding: 0 10px;
+
+        img {
+          object-fit: contain;
+        }
+
+        .menuitem_link_arrow {
+          margin-left: auto;
+        }
+
+        &:hover {
+          color: #384c5c;
+          background-color: #f2f4f7;
+
+          img {
+            filter: invert(74%) sepia(26%) saturate(1786%) hue-rotate(154deg) brightness(150%) contrast(96%);
+          }
+        }
+      }
+    }
+
+    .sidebar_submenuitem_active {
+      .sidebar_submenu {
+        display: block;
+      }
+    }
+  }
+}
+
+.sidebar_collapse {
+  width: 80px;
+
+  .sidebar_button {
+    left: 90px;
+  }
+
+  .sidebar_menu {
+    .sidebar_menuitem {
+      .sidebar_menuitem_link {
+        padding-left: 20px;
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Styles for tablet screen
+ */
+@include tablet-screen() {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+/**
+ * Styles for phone screen
+ */
+@include phone-screen() {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    transform: translateX(-100%);
+  }
+
+  .sidebar_active {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,22 @@
+.CreateTemplates{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card_establishments{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 23vh);
+    gap: 25px;
+    padding: 20px;
+
+    .cont_inputs{
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        
+        .w372{
+            width: 372px;
+        }
+    }
+}

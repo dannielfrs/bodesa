@@ -1,0 +1,105 @@
+.section_table_actions{
+    .cont-btn{
+        display: flex;
+        gap: 10px;
+
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.section_table_status{
+    display: flex;
+    justify-content: center;
+    .status_active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 35px;
+        background: #f0faf6;
+        font-weight: 600;
+        color: #439968;
+        border: 1px solid #a9ccb9;
+        border-radius: 5px;
+    }
+
+    .status_inactive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 35px;
+        background: #faf8f2;
+        font-weight: 600;
+        color: #9e872b;
+        border: 1px solid #cfc28f;
+        border-radius: 5px;
+    }
+}
+.OperationsLocation{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card_header{
+    height: 85px;
+    padding: 20px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .title{
+        font-size: 16px;
+        color: #262d3f;
+        font-weight: 700;
+    }
+
+    .partRight{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        
+        .InputSearch{
+            width: 250px;
+        }
+        .ButtonNew{
+            width: 80px;
+        }
+    }
+}
+.tooltip_excel{
+    [class~="p-tooltip-text"]{
+        background: #2e7d32;
+    }
+}
+.filterPages{
+    width: 120px;
+}
+.panelPages{
+    width: 120px !important;
+    min-width: 120px !important;
+    [class~="p-dropdown-header"]{
+        [class~="p-dropdown-filter-container"]{
+          input {
+            font-size: 12px;
+          }
+        }
+      }
+  }
+.panelStatus{
+    width: 203px !important;
+    min-width: 203px !important;
+}
+.panelCompany{
+    width: 200px !important;
+    min-width: 200px !important;
+}

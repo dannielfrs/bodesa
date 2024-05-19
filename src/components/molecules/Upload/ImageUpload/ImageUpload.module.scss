@@ -1,0 +1,21 @@
+.ImgSave {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.UploadImg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.labelInput {
+    font-size: 14px;
+    font-weight: 600;
+    color: #262d3f;
+}

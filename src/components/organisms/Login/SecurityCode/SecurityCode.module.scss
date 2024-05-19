@@ -1,0 +1,247 @@
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+.section_container {
+    display: flex;
+    width: 100%;
+}
+.fifty_percent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.w_42{
+    width: 42%;
+}
+.w_60{
+    width: 60%;
+}
+.titles_background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    p{
+        font-size: 18px;
+        color: #ffffff;
+        text-decoration: none solid rgb(255, 255, 255);
+    }
+}
+.background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: #384c5c;
+    gap: 80px;
+}
+.img_fifty{
+    width: 269px;
+    height: 74px;
+    object-fit: cover;
+}
+.background_img{
+    width: 270px;
+    height: 180px;
+}
+
+.security_code{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .cont_titles{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title_sc{
+            font-size: 14px;
+            font-weight: bold;
+            color: #262d3f;
+            text-decoration: none solid rgb(38, 45, 63);
+        }
+        .span_sc{
+            font-size: 12px;
+            color: #a0a0a3;
+            text-decoration: none solid rgb(160, 160, 163);
+            text-align: right;
+        }
+    }
+}
+.container_code_validation {
+    display: flex;
+    gap: 20px;
+    width: 327px;
+    height: 45px;
+    input {
+        width: 45px;
+    }
+}
+  
+.form {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 31px;
+    margin-bottom: 10px;
+    .titles{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    h2 {
+        font-size: 18px;
+        color: #262d3f;
+        text-decoration: none solid rgb(38, 45, 63);
+        text-align: center;
+    }
+}
+
+.section_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+
+    &>div {
+        width: 100%;
+    }
+}
+
+.cont_error{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-left: 5px solid #ff5757;
+    height: 45px;
+    background: #ffe7e6;
+    margin-top: 20px; 
+
+    .txtError{
+        font-weight: 600;
+        font-size: 14px;
+        color: #ff5f5f;
+        text-decoration: none solid rgb(255, 95, 95);
+    }
+
+    .errorMsg{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        height: 100%;
+        padding: 11px 16px;
+    }
+}
+  
+  /* Tablet screen */
+
+.responsiveView{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 112px;
+    @media screen and (min-width: 375px) and (max-width: 500px){
+        gap: 25px;
+    }
+}
+.backgroundResponsive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background: #3e5261;
+    gap: 70px;
+    @media screen and (min-width: 375px) and (max-width: 500px) {
+        height: 110px;
+    }
+}
+.cont_img_resp{
+    img{
+        width: 198px;
+        height: 55px;
+        @media screen and (min-width: 375px) and (max-width: 500px){
+            width: 144px;
+            height: 40px;
+        }
+    }
+}
+.Header_responsive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+
+    .titles{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .H2Responsive{
+        font-weight: bold;
+        font-size: 22px;
+        color: #262d3f;
+        text-decoration: none solid rgb(38, 45, 63);
+        text-align: center;
+        padding: 13px;
+        @media screen and (min-width: 375px) and (max-width: 500px){
+            font-size: 18px;
+            padding: unset;
+        }
+    }
+    h2 {
+        font-size: 18px;
+        color: #262d3f;
+        text-decoration: none solid rgb(38, 45, 63);
+        text-align: center;
+        @media screen and (min-width: 375px) and (max-width: 500px){
+            font-size: 16px;
+        }
+    }
+}
+  
+.form_recover {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+        font-size: 14px;
+        font-weight: 700;
+        color: #6f7d87;
+        text-decoration: none solid rgb(111, 125, 135);
+        text-align: right;
+
+        &:hover{
+            color: #384c5c;
+        }
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .section_container {
+        padding: 0 20px;
+    }
+}

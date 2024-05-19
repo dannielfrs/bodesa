@@ -1,0 +1,72 @@
+.fileupload {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    .fileupload_label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 0;
+    }
+
+    .fileupload_content {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 1px solid #c8c8e0;
+        background-color: #f2f2f2;
+        cursor: pointer;
+
+        .fileupload_input_hidden {
+            display: none;
+        }
+
+        .fileupload_image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .fileupload_delete {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #cf5b5b;
+            color: #ffffff;
+            cursor: pointer;
+
+            i {
+                font-size: 8px;
+            }
+        }
+
+        .fileupload_empty {
+            width: 110px;
+            height: 80px;
+            object-fit: contain;
+        }
+    }
+
+    .invalid {
+        border: 1px solid red;
+    }
+
+    .invalid_message {
+        font-family: Tahoma;
+        font-size: 11px;
+        color: #cf1515;
+        margin-left: 5px;
+    }
+}
